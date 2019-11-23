@@ -25,6 +25,7 @@ public class MainActivity extends AppCompatActivity {
     // Create an anonymous implementation of OnClickListener
     private View.OnClickListener bottone1 = new View.OnClickListener() {
         public void onClick(View v) {
+            button1.setText(R.string.button1_name2);
             button2.setVisibility(View.VISIBLE);
             button3.setVisibility(View.VISIBLE);
         }
