@@ -1,7 +1,11 @@
 <resources>
-    <string name="app_name">PassaggioActivity_1</string>
+    <string name="app_name">passaggioActivity_1</string>
     <string name="button1_name1">Premimi</string>
     <string name="button1_name2">Premuto</string>
     <string name="button2_name">Activity 1</string>
     <string name="button3_name">Activity 2</string>
+    <string name="toast_button2">Activity 1..</string>
+    <string name="toast_button3">Activity 2..</string>
+    <string name="title_activity_second">SecondActivity</string>
+    <string name="title_activity_third">ThirdActivity</string>
 </resources>
