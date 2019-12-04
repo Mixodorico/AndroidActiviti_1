@@ -18,14 +18,12 @@
         </activity>
         <activity
             android:name=".Activity1"
-            android:label="Activity1"></activity>
-
+            android:label="Activity1"
+            android:parentActivityName=".MainActivity" />
         <activity
             android:name=".Activity2"
-            android:label="Activity2">
-
-        </activity>
-
+            android:label="Activity2"
+            android:parentActivityName=".MainActivity" />
     </application>
 
 </manifest>

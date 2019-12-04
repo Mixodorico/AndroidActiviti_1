@@ -2,7 +2,7 @@
 
 buildscript {
     repositories {
-        google()
+        google() // per potersi connettere ai servizi Google
         jcenter()
         
     }
