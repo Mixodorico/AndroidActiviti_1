@@ -26,7 +26,7 @@ dependencies {
     implementation 'com.google.android.material:material:1.0.0'
     // per i servizi google (vedi qui): https://developers.google.com/android/guides/setup
     // implementation 'com.google.android.gms:play-services-identity:17.0.0' // per effettuare il signin
-    // implementation 'com.google.android.gms:play-services-auth:17.0.0' // per autenticarsi
+    implementation 'com.google.android.gms:play-services-auth:17.0.0' // per autenticarsi login
     // implementation 'com.google.android.gms:play-services-drive:17.0.0' // per accedere su drive
     testImplementation 'junit:junit:4.12'
     androidTestImplementation 'androidx.test.ext:junit:1.1.0'

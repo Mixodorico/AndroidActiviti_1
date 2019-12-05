@@ -13,8 +13,7 @@ public class Activity2 extends AppCompatActivity {
         setContentView(R.layout.activity_2);
 
         WebView myWebView = (WebView) findViewById(R.id.webview); // definizione della connessione internet
-        myWebView.loadUrl("http://www.html.it");
-
+        myWebView.loadUrl("http://www.google.com");
 
     }
 }
