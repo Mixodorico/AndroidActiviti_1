@@ -1,11 +1,15 @@
 package com.mixodorico.passaggioactivity_1;
 
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
+import android.view.Menu;
+import android.view.MenuInflater;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.Toast;
 
@@ -15,6 +19,7 @@ import com.google.android.gms.auth.api.signin.GoogleSignInClient;
 import com.google.android.gms.auth.api.signin.GoogleSignInOptions;
 import com.google.android.gms.common.SignInButton;
 import com.google.android.gms.common.api.ApiException;
+import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
 
 public class Activity1 extends AppCompatActivity {
@@ -70,7 +75,28 @@ public class Activity1 extends AppCompatActivity {
         */
     }
 
-    private View.OnClickListener signInClick = new View.OnClickListener() {
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        MenuInflater inflater = getMenuInflater();
+        inflater.inflate(R.menu.menu, menu);
+        return true;
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item)
+    {
+        int id=item.getItemId();
+        switch(id)
+        {
+            case R.id.MENU_1: signOut();
+                break;
+            case R.id.MENU_2: Toast.makeText(context, "Tutto funziona correttamente", duration).show();
+
+        }
+        return false;
+    }
+
+        private View.OnClickListener signInClick = new View.OnClickListener() {
         public void onClick(View v) {
             switch (v.getId()) {
                 case R.id.sign_in_button:
@@ -122,4 +148,16 @@ public class Activity1 extends AppCompatActivity {
             Toast.makeText(context, R.string.oggettoNull, duration).show();
         }
     }
+
+    private void signOut() {
+        mGoogleSignInClient.signOut()
+                .addOnCompleteListener(this, new OnCompleteListener<Void>() {
+                    @Override
+                    public void onComplete(@NonNull Task<Void> task) {
+                        // ...
+                    }
+                });
+    }
+
+
 }
