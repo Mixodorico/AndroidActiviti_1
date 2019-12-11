@@ -23,6 +23,9 @@
             android:name=".Activity1"
             android:label="Activity1"
             android:parentActivityName=".MainActivity" />
+        <uses-library
+            android:name="org.apache.http.legacy"
+            android:required="false" />
         <activity
             android:name=".Activity2"
             android:label="Activity2"

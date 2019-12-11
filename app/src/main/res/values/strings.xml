@@ -12,4 +12,5 @@
     <string name="benvenuto2">Benvenuto nell\'Activity 2</string>
     <string name="oggettoNull">L\'utente NON ha ancora effettuato il SignIn nell\'applicazione Google</string>
     <string name="oggettoNonNull">L\'utente ha già effettuato il SignIn nell\'applicazione Google</string>
+    <string name="server_client_id">492606205053-3i3unmv23a41ml8eiv8tk7c7lgcehj3k.apps.googleusercontent.com</string>
 </resources>
