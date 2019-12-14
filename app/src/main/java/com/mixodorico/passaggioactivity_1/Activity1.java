@@ -31,7 +31,7 @@ public class Activity1 extends AppCompatActivity {
     private static final int RC_SIGN_IN = 9001;
     private Context context;
 
-    private CallAPI callAPI;
+    //private CallAPI callAPI;
     final int duration = Toast.LENGTH_SHORT;
     private static final String TAG = "Demo1";
 
